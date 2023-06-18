@@ -1,0 +1,14 @@
+<ul class="remote-menu">
+  <li><a routerLink="/">Home</a></li>
+  <li><a routerLink="login">Login</a></li>
+  <li><a routerLink="todo">Todo</a></li>
+</ul>
+
+<div style="height: 100vh; display: flex; justify-items: stretch; width: 100vw">
+  <div style="border-right: 2px solid black; flex: 1">
+    <nx-dynamic-mf-mf-loader></nx-dynamic-mf-mf-loader>
+  </div>
+  <div style="flex: 1">Right</div>
+</div>
+
+<router-outlet></router-outlet>
