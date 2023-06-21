@@ -10,6 +10,7 @@ import {HeaderComponent} from "./core/header.component";
   template: `
     <app-header></app-header>
     <div class="container">
+      <p>Microfrontend with Hyperlink integration</p>
     <h1>Microfrontend one</h1>
     </div>
   `,

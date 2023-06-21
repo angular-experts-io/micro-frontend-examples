@@ -1,0 +1,5 @@
+{
+  "stocks": "http://localhost:4201",
+  "taxes": "http://localhost:4202",
+  "account": "http://localhost:4203"
+}

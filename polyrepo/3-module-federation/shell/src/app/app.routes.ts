@@ -1,5 +1,4 @@
 import {Route} from "@angular/router";
-import {HomeComponent} from "./home.component";
 
 export const appRoutes: Route[] = [
   {
@@ -11,12 +10,8 @@ export const appRoutes: Route[] = [
     loadComponent: () => import('mfe2/Component').then((c) => c.AppComponent),
   },
   {
-    path: 'home',
-    component: HomeComponent
-  },
-  {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'home',
+    redirectTo: 'mf-one',
   },
 ];

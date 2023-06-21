@@ -1,28 +1,17 @@
-<!--
-<ul class="remote-menu">
-  <li><a routerLink="/">Home</a></li>
-  <li><a routerLink="stocks">Stocks</a></li>
-  <li><a routerLink="taxes">Taxes</a></li>
-  <li><a routerLink="account">Account</a></li>
-</ul>
-<router-outlet></router-outlet>
--->
-<dmf-header/>
-<a [routerLink]="[{ outlets: { mf: ['test'], two: ['test'] } }]">Route</a>
+<app-header/>
 <div class="p-4 grid grid-cols-7 grid-rows-1 gap-4">
-  <div class="bg-red-500 row-start-1 col-start-1 col-span-2 h-screen grid grid-rows-2 gap-4">
-    <div class="bg-yellow-500">
-      <router-outlet name="mf"/>
+  <div class="row-start-1 col-start-1 col-span-2 h-screen grid grid-rows-2 gap-4">
+    <div class="rounded-lg shadow-lg bg-white p-4">
+      <mf-loader remoteModuleName="stocks"></mf-loader>
     </div>
 
-    <div class="bg-yellow-300">
+    <div class="rounded-lg shadow-lg bg-white p-4">
       <mf-loader remoteModuleName="taxes"></mf-loader>
-      <router-outlet name="two"/>
     </div>
 
   </div>
 
-  <div class="bg-red-500 row-start-1 col-start-3 col-span-5 h-screen">
+  <div class="rounded-lg shadow-lg bg-white row-start-1 col-start-3 col-span-5 h-screen p-4">
     <mf-loader remoteModuleName="account"></mf-loader>
   </div>
 

@@ -1,0 +1,21 @@
+<app-header/>
+<a [routerLink]="[{ outlets: { mf: ['test'], two: ['test'] } }]">Route</a>
+<div class="p-4 grid grid-cols-7 grid-rows-1 gap-4">
+  <div class="row-start-1 col-start-1 col-span-2 h-screen grid grid-rows-2 gap-4">
+    <div class="rounded-lg shadow-lg bg-white">
+      <router-outlet name="mf"/>
+    </div>
+
+    <div class="rounded-lg shadow-lg bg-white">
+      <mf-loader remoteModuleName="taxes"></mf-loader>
+      <router-outlet name="two"/>
+    </div>
+
+  </div>
+
+  <div class="rounded-lg shadow-lg bg-white row-start-1 col-start-3 col-span-5 h-screen">
+    <mf-loader remoteModuleName="account"></mf-loader>
+  </div>
+
+
+</div>
