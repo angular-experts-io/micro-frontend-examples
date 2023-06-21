@@ -5,17 +5,26 @@ import {Component} from "@angular/core";
   selector: 'app-header',
   template: `
     <nav>
+      <img src="assets/ax-logo.svg" class="logo"/>
       <a class="active" routerLink="/">App One</a>
       <a href="http://localhost:4202">App two</a>
     </nav>
   `,
   styles: [`
+
     nav {
       display: flex;
       align-items: center;
       padding: 20px;
       height: 60px;
-      background-color: #145af4;
+      background: rgb(40, 82, 200);
+      filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+
+      .logo {
+        height: 50px;
+        width: 50px;
+        margin-right: 20px;
+      }
 
       a {
         margin-right: 20px;
