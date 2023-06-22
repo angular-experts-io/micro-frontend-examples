@@ -9,6 +9,7 @@ import {RouterLink, RouterLinkActive} from "@angular/router";
       <img src="assets/ax-logo.svg" class="logo"/>
       <a routerLinkActive="active" routerLink="mf-one">Microfrontend one</a>
       <a routerLinkActive="active" routerLink="mf-two">Microfrontend two</a>
+      <a routerLinkActive="active" routerLink="dashboard">Dashboard</a>
     </nav>
   `,
   imports: [

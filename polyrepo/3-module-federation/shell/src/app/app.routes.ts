@@ -10,6 +10,10 @@ export const appRoutes: Route[] = [
     loadComponent: () => import('mfe2/Component').then((c) => c.AppComponent),
   },
   {
+    path: 'dashboard',
+    loadComponent: () => import('./dashboard.component').then((c) => c.DashboardComponent),
+  },
+  {
     path: '',
     pathMatch: 'full',
     redirectTo: 'mf-one',
