@@ -1,6 +1,7 @@
 module.exports = {
   name: 'mf-two',
   exposes: {
-    './Module': 'apps/mf-two/src/app/remote-entry/entry.module.ts',
+    './Routes': 'apps/mf-two/src/app/app.routes.ts',
+    './Component': 'apps/mf-two/src/app/remote-entry/entry.component.ts'
   },
 };

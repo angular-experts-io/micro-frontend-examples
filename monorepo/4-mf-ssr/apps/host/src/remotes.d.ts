@@ -1,3 +1,2 @@
-declare module 'mf-one/Module';
-
-declare module 'mf-two/Module';
+declare module 'mf-one/Routes';
+declare module 'mf-two/Routes';

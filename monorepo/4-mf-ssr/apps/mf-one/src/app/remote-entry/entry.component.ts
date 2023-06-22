@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
+  standalone: true,
   selector: 'host-mf-one-entry',
-  template: `<host-nx-welcome></host-nx-welcome>`,
+  template: `<h1 style="font-size: 30px; font-weight: bold">Hello from Micro frontend one</h1>`
 })
 export class RemoteEntryComponent {}
