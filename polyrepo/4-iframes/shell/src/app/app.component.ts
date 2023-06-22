@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 
 import {HeaderComponent} from "./core/header.component";
-import {MfOneWrapperComponent} from "./mf-one-wrapper.component";
+import {MfOneWrapperComponent} from "./wrappers/mf-one-wrapper.component";
 
 @Component({
   selector: 'app-root',

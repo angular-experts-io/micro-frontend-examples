@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
-import { MfOneWrapperComponent } from './mf-one-wrapper.component';
-import {MfTwoWrapperComponent} from "./mf-two-wrapper.component";
+import { MfOneWrapperComponent } from './wrappers/mf-one-wrapper.component';
+import {MfTwoWrapperComponent} from "./wrappers/mf-two-wrapper.component";
+import {PortalWrapperComponent} from "./wrappers/portal-wrapper.component";
 
 export const routes: Routes = [
   {
@@ -10,6 +11,10 @@ export const routes: Routes = [
   {
     path: 'mf-two',
     component: MfTwoWrapperComponent
+  },
+  {
+    path: 'portal',
+    component: PortalWrapperComponent
   },
   {
     path: '',
