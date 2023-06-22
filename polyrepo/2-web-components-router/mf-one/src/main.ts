@@ -1,7 +1,6 @@
 import {createApplication} from "@angular/platform-browser";
 import {createCustomElement} from "@angular/elements";
 
-import {GreetingComponent} from "./app/greeting.component";
 import {NgZone} from "@angular/core";
 import {AppComponent} from "./app/app.component";
 
@@ -13,10 +12,10 @@ import {AppComponent} from "./app/app.component";
     ],
   });
 
-  const greeting = createCustomElement(GreetingComponent, {
+  const webComp = createCustomElement(AppComponent, {
     injector: app.injector,
   });
-  customElements.define('mf-one-greeting', greeting);
+  customElements.define('mf-one-greeting', webComp);
 
   app.injector.get(NgZone).run(() => {
     app.bootstrap(AppComponent);

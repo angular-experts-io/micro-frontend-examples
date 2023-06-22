@@ -9,14 +9,12 @@ import { HeaderComponent } from './core/header.component';
   standalone: true,
   imports: [CommonModule, RouterOutlet, LazyElementsModule, HeaderComponent],
   template: `
-    <app-header />
-    <div style="padding: 20px">
-    <p>Microfrontends using web components and Angular elements</p>
-    <mf-one-greeting *axLazyElement="elementUrl"></mf-one-greeting>
-    </div>
-  `,
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+      <app-header/>
+      <div style="padding: 20px">
+          <p>Microfrontends using web components and Angular elements</p>
+          <router-outlet/>
+      </div>
+  `
 })
 export class AppComponent {
-  elementUrl = 'http://localhost:4201/main.js';
 }

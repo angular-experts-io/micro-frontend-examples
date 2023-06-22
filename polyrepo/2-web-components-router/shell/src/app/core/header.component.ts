@@ -1,15 +1,18 @@
 import {Component} from "@angular/core";
+import {RouterLink, RouterLinkActive} from "@angular/router";
 
 @Component({
   standalone: true,
   selector: 'app-header',
   template: `
-    <nav>
-      <img src="assets/ax-logo.svg" class="logo"/>
-      <a class="active" routerLink="/">App One</a>
-      <a href="http://localhost:4202">App two</a>
-    </nav>
+      <nav>
+          <img src="assets/ax-logo.svg" class="logo"/>
+          <a routerLinkActive="active" routerLink="mf-one">Microfrontend one</a>
+          <a routerLinkActive="active" routerLink="mf-two">Microfrontend two</a>
+          <a routerLinkActive="active" routerLink="dashboard">Portal</a>
+      </nav>
   `,
+  imports: [RouterLink, RouterLinkActive],
   styles: [`
 
     nav {

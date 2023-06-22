@@ -1,13 +1,11 @@
 import {Component} from '@angular/core';
-import {GreetingComponent} from "./greeting.component";
 
 @Component({
   standalone: true,
-  selector: 'app-root',
+  selector: 'mf-root',
   template: `
-    <app-greeting></app-greeting>
-  `,
-  imports: [GreetingComponent]
+    <h1>Microfrontend one</h1>
+  `
 })
 export class AppComponent {
 }
