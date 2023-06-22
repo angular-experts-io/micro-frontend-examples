@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'mf-one-mf-one-entry',
-  template: `<h1 class="text-xl">Hello from Microfrontend one</h1>`
+  standalone: true,
+  selector: 'mf-one-entry',
+  template: `<h1 style="font-size: 30px; font-weight: bold">Hello from Micro frontend one</h1>`,
 })
 export class RemoteEntryComponent {}
