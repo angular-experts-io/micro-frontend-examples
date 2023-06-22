@@ -19,6 +19,7 @@ export const appRoutes: Route[] = [
   },
   {
     path: '',
-    component: NxWelcomeComponent,
+    redirectTo: 'mf-one',
+    pathMatch: 'full'
   },
 ];
