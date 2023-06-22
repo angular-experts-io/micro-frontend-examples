@@ -10,8 +10,8 @@ export const routes: Routes = [
     loadComponent: () => import('./wrappers/wrapper-mf-two.component').then(c => c.WrapperMfTwoComponent),
   },
   {
-    path: 'dashboard',
-    loadComponent: () => import('./wrappers/wrapper-dashboard.component').then(c => c.WrapperDashboardComponent),
+    path: 'portal',
+    loadComponent: () => import('./wrappers/portal.component').then(c => c.PortalComponent),
   },
   {
     path: '',

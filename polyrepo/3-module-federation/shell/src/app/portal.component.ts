@@ -1,23 +1,22 @@
-import {Component, CUSTOM_ELEMENTS_SCHEMA} from "@angular/core";
-import {LazyElementsModule} from "@angular-extensions/elements";
+import {Component} from "@angular/core";
+import {MfLoaderComponent} from "./core/mf-loader.component";
 
 @Component({
   standalone: true,
-  selector: 'wrapper-dashboard',
+  selector: 'dashboard',
   template: `
     <div class="grid">
       <div class="card">
-        <mf-one-greeting *axLazyElement="mfOneURL"></mf-one-greeting>
+        <mf-loader remoteModuleName="mfe1"></mf-loader>
       </div>
       <div class="card">
-        <mf-two-greeting *axLazyElement="mfTwoURL"></mf-two-greeting>
+        <mf-loader remoteModuleName="mfe2"></mf-loader>
       </div>
     </div>
   `,
   imports: [
-    LazyElementsModule
+    MfLoaderComponent
   ],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   styles: [`
     .grid {
       display: grid;
@@ -33,7 +32,5 @@ import {LazyElementsModule} from "@angular-extensions/elements";
     }
   `]
 })
-export class WrapperDashboardComponent {
-  mfOneURL = 'http://localhost:4201/main.js';
-  mfTwoURL = 'http://localhost:4202/main.js';
+export class PortalComponent {
 }
