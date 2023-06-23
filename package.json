@@ -2,6 +2,7 @@
   "name": "mfs",
   "version": "1.0.0",
   "scripts": {
+    "install-deps": "npmiall",
     "start:pol-hyperlinks": "run-p start:polyrepo-hyperlinks:**",
     "start:poly-hyperlinks:app-one": "cd polyrepo/1-hyperlink-integration/app-one && npm start",
     "start:poly-hyperlinks:app-two": "cd polyrepo/1-hyperlink-integration/app-two && npm start",
@@ -21,6 +22,7 @@
     "start:mono-mf-ssr": "cd 6-mono-mf-ssr && npm run start:host"
   },
   "devDependencies": {
-    "npm-run-all": "^4.1.5"
+    "npm-run-all": "^4.1.5",
+    "npmiall": "^2.0.0"
   }
 }
